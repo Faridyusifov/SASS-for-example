@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin-bottom: 30px; }
+  header img {
+    margin: 30px 0px 0px 30px;
+    width: 160px; }
+    header img:hover {
+      cursor: pointer; }
+
+.div-menu .menu {
+  margin: 50px 100px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .div-menu .menu a {
+    text-decoration: none;
+    color: #333333;
+    background: transparent; }
+    .div-menu .menu a:hover {
+      color: blue;
+      transition-property: background,color;
+      transition-duration: 0.3s, 0.3s;
+      transition-timing-function: ease,ease;
+      transition-delay: 0s,0s; }
+  .div-menu .menu .menu-items {
+    list-style: none;
+    padding: 10px 0 10px 30px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: arial; }
+    .div-menu .menu .menu-items:nth-child(4) {
+      padding-right: 50px; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, white, black, white); }
+  main section {
+    color: white;
+    width: 50%; }
+    main section h1 {
+      font-size: 70px;
+      text-align: center;
+      font-family: arial;
+      margin: 20px 0px 30px 0px; }
+    main section h2 {
+      font-size: 30px;
+      text-align: center;
+      font-family: arial;
+      margin: 40px 0px 0px 0px; }
+    main section .button {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main section .button div {
+        width: 80px;
+        text-align: center;
+        padding: 15px 30px;
+        font-family: arial;
+        border-color: #A1A3A4;
+        background-color: #222222;
+        margin: 40px 20px 40px 0px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        transition-duration: 0.4s; }
+        main section .button div:nth-child(2) {
+          margin-right: 0; }
+        main section .button div a {
+          color: white;
+          text-decoration: none;
+          font-size: 17px;
+          font-weight: 600; }
+        main section .button div:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          cursor: pointer;
+          background-color: #5F5F5F; }
+
+/*# sourceMappingURL=portfolio.css.map */

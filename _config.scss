@@ -1,0 +1,16 @@
+$borderColor:#A1A3A4;
+$menuColor:#333333;
+$mainColor:rgb(255, 255, 255);
+$fontFamily:arial;
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

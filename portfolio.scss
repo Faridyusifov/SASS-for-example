@@ -1,0 +1,112 @@
+@import 'config';
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+header{
+    @include displayFlex;
+         background:white;
+         margin-bottom: 30px;
+    img{
+        margin: 30px 0px 0px 30px;
+        width: 160px;
+        &:hover{
+            cursor: pointer;}
+    }
+}
+
+.div-menu{
+    
+
+    .menu{
+        margin: 50px 100px 0px 0px;
+        @include displayFlex;
+
+        & a{
+            text-decoration: none;
+            color: $menuColor;
+            background: transparent;
+            
+            &:hover{
+                color: blue;
+                transition-property: background,color;
+                transition-duration: 0.3s, 0.3s;
+                transition-timing-function: ease,ease;
+                transition-delay: 0s,0s;
+            }
+        }
+        & .menu-items{
+            list-style: none;
+            padding: 10px 0 10px 30px;
+            
+            font-size: 17px;
+            font-weight: 600;
+            font-family: $fontFamily;
+            &:nth-child(4){
+                padding-right: 50px;
+            }
+        }
+    }
+}
+
+main{
+    @include section;
+    background-image: linear-gradient(to right, white,black,white);
+
+    section{
+        color: $mainColor;
+        width: 50%;
+        h1{
+            font-size: 70px;
+            text-align: center;
+            font-family: $fontFamily;
+            margin:20px 0px 30px 0px;
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+            font-family: $fontFamily;
+            margin: 40px 0px 0px 0px;
+        }
+
+        .button{
+            @include section;
+
+            div{
+                width: 80px;
+                text-align: center;
+                padding: 15px 30px;
+                font-family: $fontFamily;
+                border-color: $borderColor;
+                background-color:#222222;
+                margin: 40px 20px 40px 0px;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                transition-duration: 0.4s;
+                
+                &:nth-child(2){
+                    margin-right: 0;
+                }
+
+
+                a{
+                    color: $mainColor;
+                    text-decoration: none;
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+
+                &:hover{
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                    cursor: pointer;
+                    background-color: #5F5F5F;
+                }
+            }
+        }
+    }
+}
